@@ -1,0 +1,319 @@
+<div class="main-container">
+    <app-header></app-header>
+    <div class="content-wrapper">
+        <div id="sidebar-menu">
+            <div class="module">
+                <span class="menu-title"><img src="../../../assets/icons/menu-document-icon.svg" alt="document-menu"> Document Review</span>
+                <ul>
+                    <li>
+                        <a routerLink="/dashboard">Document Dashboard</a>
+                    </li>
+                    <li>
+                        <a routerLink="/find-assign" class="active">Find/Assign</a>
+                    </li>
+                    <li>
+                        <a routerLink="/document-list">List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <app-sidebar></app-sidebar> -->
+        <div class="content-area">
+
+            <div class="dashboard">
+                <h1 class="container-title">Document Find/Assign/Adjudicate</h1>
+                <div class="container-card card">
+                    <h2>Document Overview</h2>
+                    <table class="pt-0">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Program
+                                </th>
+                                <th>
+                                    Reviewer
+                                </th>
+                                <th>
+                                    File <br>Type
+                                </th>
+                                <th>
+                                    Source
+                                </th>
+                                <th>
+                                    Document<br>Type
+                                </th>
+                                <th>
+                                    Review<br>Status
+                                </th>
+                                <th>
+                                    Attached To
+                                </th>
+                                <th>
+                                    Date/Time<br>Received
+                                </th>
+                                <th>
+                                    Date/Time<br>Processed
+                                </th>
+                                <th>
+                                    Doc ID
+                                </th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a routerLink="[/]">Program A</a>
+                                </td>
+                                <td>
+                                    Rep A
+                                </td>
+                                <td>
+                                    <a routerLink="[/]">FAX</a>
+                                </td>
+                                <td>
+                                    Phone <br> 876-555-4321
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>03/03/2023<br>4:45 PM</td>
+                                <td>03/04/2023<br>9:00 AM</td>
+                                <td><a routerLink="[/]">1333</a></td>
+                                <td>
+                                    <div class="action-dropdown">
+                                        <div class="popout_info">
+                                            <a href="javascript:;">test</a>
+                                        </div>
+                                        <div class="popout_list">
+                                            <ul>
+                                            <li><a>Open Document</a></li>
+                                            <li><a>Clone Document</a></li>
+                                            <li><a>Review Fax Back Page</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container-card card find-assign">
+                    <h2>Document Type</h2>
+
+                    <div class="doc-type-sec">
+                        <div class="select">
+                            <label class="input-label">Review Stats</label>
+                            <ul>
+                                <li class="option dafault">EOB</li>
+                                <li class="option">Fax Consent</li>
+                                <li class="option">Multiple EOB’s</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>Patient & Provider Info</h2>
+                    <div class="doc-type-sec">
+                        <div class="patient-info">
+                            <div class="search-patient">
+                                <div class="info-row">
+                                    <label class="input-label">Search Patient</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Type Name" />
+                                        </div>
+                                        <button class="btn-find">Find</button>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <label class="input-label">Patient</label>
+                                    <div class="field-row">
+                                        <textarea></textarea>
+                                        <button class="btn-secondary">Assign</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-patient">
+                                <div class="info-row">
+                                    <label class="input-label">Search Provider</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Provider Name/NPI" />
+                                        </div>
+                                        <button class="btn-find">Find</button>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <label class="input-label">Provider</label>
+                                    <div class="field-row">
+                                        <textarea></textarea>
+                                        <button class="btn-secondary">Assign</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Payment Info</h2>
+                    <div class="doc-type-sec">
+                        <div class="patient-info">
+                            <div class="search-patient">
+                                <div class="info-row">
+                                    <label class="input-label">Amount Billed</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Type Name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <label class="input-label">Date of Service</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Type Name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <label class="input-label">Amount Allowed</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Drug/JCODE" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-patient">
+                                <div class="info-row">
+                                    <label class="input-label">Drug/JCODE</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Drug/JCODE" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <label class="input-label">Patient Responsibility</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Patient Responsibility" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <label class="input-label">Amount Paid To Provider</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="number" placeholder="Type Name" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="search-patient highlight-payment">
+                                <div class="info-row">
+                                    <label class="input-label">Insurance Company</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Insurance Company" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <label class="input-label">Co-pay Amount</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="number" placeholder="Co-pay Amount" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <label class="input-label">Approved Amount</label>
+                                    <div class="field-row">
+                                        <div class="input-field">
+                                            <input type="number" placeholder="Approved Amount" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Payment Type & Approval</h2>
+                    <div class="doc-type-sec payment-approval">
+
+                        <div class="search-patient payment-option">
+                            <div class="info-row">
+                                <label class="input-label">Payment by</label>
+                                <div class="field-row">
+                                    <input type="radio" class="radio" /> Card <button class="btn-secondary">Load Patient <br>
+                                        Payment Card</button>
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <label class="input-label"></label>
+                                <div class="field-row">
+                                    <input type="radio" class="radio" /> Check
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <label class="input-label">Send To</label>
+                                <div class="field-row">
+                                    <div class="select">
+                                        <ul>
+                                            <li class="option dafault">Provider</li>
+                                            <li class="option">Patient</li>
+                                        </ul>
+                                    </div>
+                                    <button class="filter-clear">Issue Check</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="message-box">
+                            <label class="input-label">Message to Fax Back</label>
+                            <div class="msg">
+                                Claim Approved and Card Number xxxx xxxx xxxx 2333 loaded for $500.00
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2>Payment Rejection</h2>
+                    <div class="doc-type-sec">
+                        <div class="info-row">
+                            <label class="input-label">Reason</label>
+                            <div class="field-row">
+                                <div class="select">
+                                    <ul>
+                                        <li class="option dafault">Insufficient Information</li>
+                                        <li class="option">Patient has reached max benefit</li>
+                                        <li class="option">Outside retro period (180 days)</li>
+                                        <li class="option">Outside submission period (365 days)</li>
+                                        <li class="option">Patient has govt’ insurance</li>
+                                        <li class="option">Claim has already been processed</li>
+                                        <li class="option">Insurance has not paid first</li>
+                                    </ul>
+                                </div>
+                                <button class="btn-secondary">Reject</button>
+                            </div>
+                        </div>
+
+                        <div class="message-box">
+                            <label class="input-label">Message to Fax Back</label>
+                            <div class="msg">
+                                Payment Rejected - Insufficient Information
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="function-title">Function(s): Details of a selected program</div>
+        </div>
+    </div>
+
+</div>

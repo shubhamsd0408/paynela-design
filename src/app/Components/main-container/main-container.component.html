@@ -1,0 +1,27 @@
+<div class="main-container">
+    <app-header></app-header>
+    <div class="content-wrapper">
+        <!-- <app-sidebar></app-sidebar> -->
+        <div id="sidebar-menu">
+            <div class="module">
+                <span class="menu-title"><img src="../../../assets/icons/menu-document-icon.svg" alt="document-menu"> Document Review</span>
+                <ul>
+                    <li>
+                        <a routerLink="/dashboard" class="active">Document Dashboard</a>
+                    </li>
+                    <li>
+                        <a routerLink="/find-assign">Find/Assign</a>
+                    </li>
+                    <li>
+                        <a routerLink="/document-list" >List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-area">
+            <app-dashboard></app-dashboard>
+            <div class="function-title">Function(s): Details of a selected program</div>
+        </div>
+    </div>
+
+</div>

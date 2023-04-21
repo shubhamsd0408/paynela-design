@@ -1,0 +1,49 @@
+table{
+    border-spacing: 0px;
+    width: 100%;
+
+    thead{
+        background-color: $gray-3;
+
+        th{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            border: 0px;
+            padding: 13px 0px 13px 13px;
+            text-align: left;
+            white-space: nowrap;
+        }
+    }
+
+    tbody{
+        td{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            border-bottom: 2px solid $gray-4;
+            padding: 13px 0px 13px 13px;
+            white-space: nowrap;
+
+            a{
+                color: $black;
+            }
+        }
+
+        tr{
+            &:hover{
+                td{
+                    font-weight: 700;
+
+                    a{
+                        color: $blue;
+                    }
+
+                    .table-action-btn{
+                        background-color: $light-blue;
+                    }
+                }
+            }
+        }
+    }
+}

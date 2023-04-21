@@ -1,0 +1,75 @@
+.action-dropdown{
+
+    position: relative;
+
+    .popout_info {
+        display: block;
+        position: absolute;
+        right: 45px;
+        top: -10px;
+        width: 20px;
+        font-size: 16px;
+        color: #919191;
+        text-align: center;
+      }
+      
+      .popout_info > a {
+        color: #919191;
+        text-decoration: none;
+        overflow: hidden;
+        text-indent: -100px;
+        position: relative;
+        color: transparent;
+
+        &::after{
+            content: "";
+            background-image: url('../assets/icons/menu-icon.svg');
+            background-repeat: no-repeat;
+            width: 5px;
+            height: 24px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+      }
+      
+      .popout_list {
+        position: absolute;
+        right: 0px;
+        top: 28px;
+        width: auto;
+        background: #fff;
+        border-radius: 3px;
+        border: 1px solid #e1e1e1;
+        display: none;
+      }
+      
+      .popout_list > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .popout_list > ul > li {
+        list-style: none;
+        display: block;
+        padding: 5px 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: #808080;
+      }
+      
+      .popout_list > ul > li > a {
+        text-decoration: none;
+        color: #808080;
+        cursor: pointer;
+      }
+      
+      .popout_list > ul > li:hover {
+        background: #D4D4D4;
+      }
+      
+      .popout_list > ul > li:hover a {
+        color: $black;
+      }
+}

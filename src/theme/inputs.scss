@@ -1,0 +1,41 @@
+.input-field{
+    margin-bottom: 35px;
+
+    label{
+        color: $black;
+        font-size: 16px;
+        display: block;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    input{
+        background: #FEFEFF;
+        border: 1px solid $gray-1;
+        border-radius: 5px;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    textarea{
+        width: 330px;
+        min-height: 120px;
+        border: 1px solid $gray-1;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+textarea{
+    width: 290px;
+    min-height: 100px;
+    border: 1px solid $gray-1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.radio{
+    margin-right: 10px;
+}

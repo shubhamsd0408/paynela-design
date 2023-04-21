@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div id="login-component">
+    <div class="login-banner">
+        <div class="ban-img"><img src="../../../assets/images/slpash-screen-icon.svg" alt="Paynela"></div>
+        <h2 class="ban-text">Paynela EOB Adjudication and <br /> Payment Program</h2>
+    </div>
+    <div class="login-form">
+        <form>
+            <h1>Login</h1>
+            <div class="input-field">
+                <label>Username <span class="mandatory">*</span></label>
+                <input type="text" placeholder="Username" />
+            </div>
+
+            <div class="input-field">
+                <label>Passerord <span class="mandatory">*</span></label>
+                <input type="password" placeholder="Password" />
+            </div>
+
+            <div class="input-field">
+                <div class="remember">
+                    <input type="checkbox" class="checkbox" />
+                    <a routerLink="[/]">Lost your password</a>
+                </div>
+            </div>
+
+            <button type="submit" class="submit">Login</button>
+
+            <p class="sign-up-text">Don’t have an account?  <a routerLink="[/]">Register now</a> </p>
+        </form>
+    </div>
+</div>

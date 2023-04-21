@@ -1,0 +1,395 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.mandatory {
+    color: $red;
+}
+
+header {
+    height: 83pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $header;
+    padding: 0 30px;
+    margin-bottom: -1px;
+
+    a {
+        font-size: 20ox;
+        color: $white;
+    }
+
+    z-index: 999;
+    position: relative;
+}
+
+
+#login-component {
+    display: flex;
+    height: calc(100vh - 111px);
+    justify-content: space-between;
+    align-items: center;
+
+    .input-field {
+        width: 378px;
+    }
+
+    .login-banner {
+        width: 50%;
+        background-image: url(../assets/images/gradient-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        text-align: center;
+
+        .ban-img {
+            margin-top: 130px;
+        }
+
+        .ban-text {
+            font-weight: 200;
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+
+    .login-form {
+        width: 50%;
+        height: 100%;
+
+        form {
+            margin-left: 140px;
+            margin-top: 80px;
+
+            h1 {
+                margin-bottom: 30px;
+            }
+
+            a:hover {
+                color: $purple;
+            }
+
+            .remember {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            p.sign-up-text {
+                margin-top: 35px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.main-container {
+    background-color: #f1f5f9;
+
+    #sidebar-menu {
+        width: 280px;
+        background-color: $white;
+        padding: 53px 26px;
+        min-height: calc(100vh - 217px);
+        // height: 100%;
+        height: auto;
+
+        .menu-title {
+            margin-bottom: 10px;
+            display: block;
+            color: $blue-1;
+            cursor: pointer;
+            position: relative;
+            font-weight: 500;
+
+            img {
+                display: inline-block;
+                margin-right: 8px;
+                margin-bottom: -2px;
+            }
+
+            &::after {
+                content: "";
+                background-image: url(../assets/icons/arrow-icon.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 7px;
+                position: absolute;
+                right: 0px;
+                top: 8px;
+            }
+        }
+
+        ul {
+
+            margin-left: 28px;
+
+            li {
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $dark-color-3;
+                    padding: 7px 0;
+                    display: block;
+
+                    &.active{
+                        font-weight: 700;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    a {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-wrapper {
+    display: flex;
+    min-height: calc(100vh - 110px);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .container-title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 28px;
+        margin: 37px 45px;
+    }
+
+    .content-area {
+        // width: 100vw;
+        width: calc(100vw - 332px);;
+
+        >.card {
+            margin-top: 30px;
+            height: calc(100vh - 237px);
+        }
+    }
+
+    .container-card {
+        >h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            margin: 25px 36px;
+        }
+    }
+
+    .dashboard-cards-row {
+        display: flex;
+        margin-left: 40px;
+        margin-bottom: 40px;
+
+        .card {
+            margin: 0px;
+            margin-right: 27px;
+            min-height: 80px;
+            min-width: 170px;
+            padding: 20px;
+
+            h3 {
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 34px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    background-image: url(../assets/icons/arrow-icon.svg);
+                    background-repeat: no-repeat;
+                    width: 12px;
+                    height: 7px;
+                    position: absolute;
+                    right: 0px;
+                    top: 8px;
+                    transform: rotate(90deg);
+                }
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                color: #64748B;
+                margin-top: 8px;
+                display: block;
+            }
+        }
+    }
+
+    table {
+        padding: 40px;
+    }
+}
+
+.filter-row {
+    display: flex;
+    // justify-content: space-between;
+    padding: 0 40px;
+
+    .filter-column {
+        margin-right: 20px;
+
+        label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            color: $dark-color-4;
+            margin-bottom: 7px;
+            display: block;
+        }
+
+        .select {
+            width: 210px;
+            position: relative;
+
+            ul {
+                position: absolute;
+                width: 100%;
+                z-index: 99;
+
+                li {
+                    &.option {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .input-field {
+            input {
+                width: auto;
+                font-weight: 700;
+            }
+
+            input.calender {
+                width: 160px;
+            }
+        }
+    }
+
+    .type {
+        .select {
+            width: 180px;
+        }
+
+        .input-field{
+            input{
+                width: 160px;
+            }
+        }
+    }
+
+    .btn-row {
+        button{
+            margin-right: 15px;
+        }
+        button.submit {
+            height: 39px;
+            min-width: 111px;
+            margin-top: 26px;
+            line-height: 39px;
+            font-size: 16px;
+        }
+    }
+}
+
+.doc-type-sec {
+    margin: 0 36px;
+
+    label.input-label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: $dark-color-4;
+        margin-bottom: 7px;
+        display: block;
+        color: #7D7D7D;
+    }
+}
+
+.find-assign{
+    .search-patient {
+        display: flex;
+        margin-bottom: 30px;
+
+        .input-field{
+            width: 290px;
+
+            input{
+                font-weight: 700;
+            }
+        }
+    }
+
+    input,textarea{
+        font-weight: 700;
+    }
+
+    .field-row {
+        display: flex;
+        margin-right: 40px;
+
+        button.btn-find, button.btn-secondary {
+            height: 41px;
+            margin-left: 35px;
+        }
+    }
+
+    .highlight-payment{
+        background-color: #F4F5FD;
+        padding: 25px 25px 0;
+    }
+}
+
+.payment-option{
+    font-weight: 500;
+    font-size: 14px;
+
+    .input-label{
+        min-height: 19px;
+    }
+
+    .field-row{
+        align-items: center;
+        min-height: 50px;
+    }
+
+    .filter-clear{
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .btn-secondary{
+        height: auto !important;
+    }
+}
+
+.container-card.card.find-assign {
+    padding-bottom: 50px;
+
+    .message-box{
+        margin-top: 30px;
+    }
+}

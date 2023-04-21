@@ -1,0 +1,202 @@
+<div class="main-container">
+    <app-header></app-header>
+    <div class="content-wrapper">
+        <div id="sidebar-menu">
+            <div class="module">
+                <span class="menu-title"><img src="../../../assets/icons/menu-document-icon.svg" alt="document-menu"> Document Review</span>
+                <ul>
+                    <li>
+                        <a routerLink="/dashboard">Document Dashboard</a>
+                    </li>
+                    <li>
+                        <a routerLink="/find-assign">Find/Assign</a>
+                    </li>
+                    <li>
+                        <a routerLink="/document-list" class="active">List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <app-sidebar></app-sidebar> -->
+        <div class="content-area">
+
+            <div class="dashboard">
+                <h1 class="container-title">Document List</h1>
+                <div class="container-card card">
+                    <h2>Filter by:</h2>
+                    <div class="filter-row">
+                        <div class="filter-column">
+                            <div class="select">
+                                <label>Program</label>
+                                <ul>
+                                    <li class="option dafault">Professionals</li>
+                                    <li class="option">Dropdown two</li>
+                                    <li class="option">Dropdown three</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-column type">
+                            <label>Type</label>
+                            <div class="select">
+                                <ul>
+                                    <li class="option dafault">Professionals</li>
+                                    <li class="option">Dropdown two</li>
+                                    <li class="option">Dropdown three</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-column type">
+                            <label>Member ID</label>
+                            <div class="input-field">
+                                <input type="text" placeholder="Input Title" />
+                            </div>
+                        </div>
+                        <div class="filter-column type">
+                            <label>Source</label>
+                            <div class="select">
+                                <ul>
+                                    <li class="option dafault">Professionals</li>
+                                    <li class="option">Dropdown two</li>
+                                    <li class="option">Dropdown three</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-column">
+                            <label>If Fax, Number</label>
+                            <div class="input-field">
+                                <input type="text" placeholder="If Fax, Number" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-row">
+                        <div class="filter-column">
+                            <div class="select">
+                                <label>Review Stats</label>
+                                <ul>
+                                    <li class="option dafault">Professionals</li>
+                                    <li class="option">Dropdown two</li>
+                                    <li class="option">Dropdown three</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="filter-column">
+                            <label>Start Date</label>
+                            <div class="input-field">
+                                <input type="date" class="calender" />
+                            </div>
+                        </div>
+                        <div class="filter-column">
+                            <label>End Date</label>
+                            <div class="input-field">
+                                <input type="date" class="calender" />
+                            </div>
+                        </div>
+                        <div class="filter-column">
+                            <div class="btn-row">
+                                <button class="filter-clear">Clear</button>
+                                <button class="submit">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-card card">
+                    <h2>Results</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Program
+                                </th>
+                                <th>
+                                    Reviewer
+                                </th>
+                                <th>
+                                    File <br>Type
+                                </th>
+                                <th>
+                                    Source
+                                </th>
+                                <th>
+                                    Document<br>Type
+                                </th>
+                                <th>
+                                    Review<br>Status
+                                </th>
+                                <th>
+                                    Attached To
+                                </th>
+                                <th>
+                                    Date/Time<br>Received
+                                </th>
+                                <th>
+                                    Date/Time<br>Processed
+                                </th>
+                                <th>
+                                    Doc ID
+                                </th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a routerLink="[/]">Program A</a>
+                                </td>
+                                <td>
+                                    Rep A
+                                </td>
+                                <td>
+                                    <a routerLink="[/]">FAX</a>
+                                </td>
+                                <td>
+                                    Phone <br> 876-555-4321
+                                </td>
+                                <td>EOB</td>
+                                <td>Approved</td>
+                                <td>Patient# <br>1234563</td>
+                                <td>03/03/2023<br>4:45 PM</td>
+                                <td>03/04/2023<br>9:00 AM</td>
+                                <td>1333</td>
+                                <td>
+                                    <button class="table-action-btn">Details</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a routerLink="[/]">Program A</a>
+                                </td>
+                                <td>
+                                    Rep A
+                                </td>
+                                <td>
+                                    <a routerLink="[/]">FAX</a>
+                                </td>
+                                <td>
+                                    Upload
+                                </td>
+                                <td>EOB</td>
+                                <td>Approved</td>
+                                <td>Patient# <br>1234563</td>
+                                <td>03/03/2023<br>4:45 PM</td>
+                                <td>03/04/2023<br>9:00 AM</td>
+                                <td>1333</td>
+                                <td>
+                                    <button class="table-action-btn">Details</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="function-title">Function(s): Details of a selected program</div>
+        </div>
+    </div>
+
+</div>
